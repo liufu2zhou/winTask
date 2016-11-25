@@ -1,7 +1,6 @@
 <?php
-//怎么判断 不能使用URL访问
-//ignore_user_abort();//关闭浏览器后，继续执行php代码
-//set_time_limit(0);//程序执行时间无限制
+//TODO 怎么判断 不能使用URL访问
+
 $sleep_time =  include 'sleeptime.php';//多长时间执行一次
 $f_sleep_time =  include 'f_sleeptime.php';//多长时间执行一次
 
@@ -29,9 +28,8 @@ while($f_switch){
 				//获取文件的统计信息
 				$fstat = stat($file);
 				
-				//$xcTime = (time() - $fstat['mtime'])/60;//当前时间和文件最后修改时间相差多少秒
 				$xcTime = intval((time() - $fstat['mtime'])%(3600*24));
-				//echo $xcTime .'>='. $fileInfo['execTime'].PHP_EOL;
+				
 				if($xcTime >= $fileInfo['execTime']){
 					//如果相差时间大于最后执行时间 则执行此任务
 					CommondExeTask($fileInfo['url'],$fileInfo['data']);
