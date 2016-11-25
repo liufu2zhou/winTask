@@ -1,7 +1,7 @@
 <?php
  define('ENVIRONMENT', 'production');//正式的 就是production
  
- $hostList = array('company'=>'spms.dev.com/index.php/','production'=>'spms.sioc.ac.cn/index.php/','hom'=>'spms.dev.com/index.php/','integle'=>'spms.integle.com.cn/index.php/');
+ $hostList = array('company'=>'','production'=>'','hom'=>'','integle'=>'');
  
  $host = $hostList[ENVIRONMENT];
  

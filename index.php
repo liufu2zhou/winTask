@@ -66,7 +66,7 @@ exit('task end');
 function CommondExeTask($url,$data = array())
 {
     $url = str_replace(array('\\','/'), ' ', $url);
-    $commond = 'C:\\PHP4SPMSV10\\php D:\\0_SPMS\\spms_branches\\index.php '.$url;
+    $commond = 'php \\index.php '.$url;
     echo $commond.PHP_EOL;
     system($commond);
     echo PHP_EOL;

@@ -1,7 +1,7 @@
 <?php
 /**
  * 删除定时任务
- * @author zan.z.liu@integle.com
+ * @author 1197680861@qq.com
  *
  */
 class delTask{
