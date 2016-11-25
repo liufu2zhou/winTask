@@ -66,7 +66,7 @@ exit('task end');
 function CommondExeTask($url,$data = array())
 {
     $url = str_replace(array('\\','/'), ' ', $url);
-    $commond = 'php \\index.php '.$url;
+    $commond = 'php \\index.php '.$url;//eg php index.php task task1 命令行执行
     echo $commond.PHP_EOL;
     system($commond);
     echo PHP_EOL;
