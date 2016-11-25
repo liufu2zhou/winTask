@@ -27,13 +27,8 @@ class delTask{
 	
 	private function getTasks()
 	{
-		$task [] = 'edisRgdtlFunds_task.php';//退货课题经费使用统计
-		$task [] = 'edisSoDtlFunds_task.php';//出库课题经费使用统计
-		$task [] = 'goodHandleRgDtl_task.php';//产品类别入库统计
-		$task [] = 'goodHandleSoDtl_task.php';//产品类别出库统计
-		$task [] = 'suppHandleRgDtl_task.php';//库房入库统计
-		$task [] = 'suppHandleSoDtl_task.php';//库房出库统计
-		$task [] = 'timecost_task.php';//经费统计
+		$task [] = '';//任务列表
+		
 		return $task;
 	}
 }
